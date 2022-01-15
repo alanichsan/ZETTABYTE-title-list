@@ -15,3 +15,70 @@ $font-weights: ("regular": 400, "medium": 500,"semibold": 600, "bold": 700,)
 
 *
     font-family: 'Rubik', sans-serif !important
+
+.navbar-book-store
+    padding-top: 24px
+
+    .navbar-brand
+        color: $kPrimaryColor !important
+        font-size: 20px
+        font-weight: map-get($font-weights,"bold" )
+
+    li
+        padding-left: 30px
+
+    .nav-link
+        color: $kDarkColor
+        font-size: 14px
+
+        &:hover
+            color: $kPrimaryColor !important
+
+        &:focus
+            color: $kPrimaryColor !important
+            font-weight: map-get($font-weights, "semibold")
+
+    .active
+        color: $kPrimaryColor !important
+        font-weight: map-get($font-weights, "semibold")
+
+    .form-control
+        border: none
+        border-radius: 0px
+        width: 70%
+        color: $kPrimaryColor
+        border-bottom: 2px solid $kNedpurColor
+        font-size: 14px
+
+        &::placeholder
+            color: $kDarkpurColor
+
+        &:hover
+            border-bottom: 2px solid $kPrimaryColor
+
+    .btn-search
+        background: $kWhiteColor
+        border: none
+        color: $kDarkColor
+        font-size: 14px
+
+.master-card
+    padding: 30px
+    border-radius: 13px
+    background: $kWhiteColor
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px
+
+    h1
+        font-size: 18px
+        font-weight: map-get($font-weights, "semibold" )
+        color: $kPrimaryColor
+
+    h3
+        font-size: 14px
+        font-weight: map-get($font-weights, "regular" )
+        color: $kDarkColor
+
+    h5
+        font-size: 14px
+        font-weight: map-get($font-weights, "regular" )
+        color: $kNedpurColor
