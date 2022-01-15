@@ -1,0 +1,47 @@
+@import '../../styles.sass'
+
+.navbar-book-store
+    padding-top: 24px
+
+    .navbar-brand
+        color: $kPrimaryColor !important
+        font-size: 20px
+        font-weight: map-get($font-weights,"bold" )
+
+    li
+        padding-left: 30px
+
+    .nav-link
+        color: $kDarkColor
+        font-size: 14px
+
+        &:hover
+            color: $kPrimaryColor !important
+
+        &:focus
+            color: $kPrimaryColor !important
+            font-weight: map-get($font-weights, "semibold")
+            
+    .active
+        color: $kPrimaryColor !important
+        font-weight: map-get($font-weights, "semibold")
+
+    .form-control
+        border: none
+        border-radius: 0px
+        width: 70%
+        color: $kPrimaryColor
+        border-bottom: 2px solid $kNedpurColor
+        font-size: 14px
+
+        &::placeholder
+            color: $kDarkpurColor
+
+        &:hover
+            border-bottom: 2px solid $kPrimaryColor
+
+    .btn-search
+        background: $kWhiteColor
+        border: none
+        color: $kDarkColor
+        font-size: 14px
